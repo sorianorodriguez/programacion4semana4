@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>identv</title>
+</head>
+
+<body>
+<script>
+var num;
+num=prompt("escribe un numero entero","");
+
+num=parseInt(num,10);
+if(primo(num)=="s")
+{alert(num+" es primo");}
+else {alert(num+"no es primo");}
+
+function primo(x)
+{var resto;
+for (i=2;i<x-1;i++){
+resto=x%i;
+if ((resto==0) && (x!=2))
+{return "n";}}
+return "s";}
+</script>
+
+<a href="index.html">pagina principal</a>
+
+</body>
+</html>
